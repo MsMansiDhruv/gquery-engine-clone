@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gquery"
+version = "0.1.0"
+description = "A lightweight in-memory vectorized columnar query engine exploring database execution internals."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Mansi Dhruv", email = "mansi.p.dhruv@gmail.com" }
+]
+keywords = [
+    "query-engine",
+    "columnar-database",
+    "vectorized-execution",
+    "database-internals",
+    "volcano-iterator",
+    "predicate-pushdown"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Database :: Database Engines/Servers",
+    "Operating System :: OS Independent"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["gquery*"]
